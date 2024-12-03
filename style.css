@@ -1,0 +1,255 @@
+body {
+    background-color: rgb(128, 128, 128, 0.55);
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    position: static;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(128, 128, 128, 1.25);
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.button {
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    padding: 6px;
+    color: black;
+    font-size: 30px;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+.button:active {
+    color: red;
+}
+
+#title {
+    font-size: 44px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 140px;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0, 0.8),
+        0px 0px 10px rgb(0, 0, 0, 0.8),
+        0px 0px 20px rgb(0, 0, 0, 0.8),
+        0px 0px 40px rgb(0, 0, 0, 0.8);
+}
+
+#logo {
+    margin-top: 4px;
+    margin-bottom: 2px;
+    margin-left: 2.5%;
+    width: 70px;
+    filter: drop-shadow(2px 2px 2px white);
+}
+
+#preloader {
+    position: fixed;
+    background-image: url("preloader_car.gif");
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper>p {
+    font-size: 25px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    line-height: 35px;
+    font-style: italic;
+    color: rgb(255, 255, 255, 100);
+}
+
+#title_home_page {
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background: linear-gradient(to left, black, whitesmoke);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 6s linear infinite;
+}
+
+@keyframes animated {
+    to {
+        background-position-x: 600px;
+    }
+}
+
+#title_home_page_2 {
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+    margin-left: 380px;
+    margin-right: 150px;
+    background: linear-gradient(to left, black, orange);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 6s linear infinite;
+}
+
+@keyframes animated {
+    to {
+        background-position-x: 600px;
+    }
+}
+
+#title_engine {
+    font-size: 33px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 5px black,
+        0px 0px 10px black,
+        0px 0px 20px black,
+        0px 0px 40px black;
+}
+
+.book {
+    position: relative;
+    width: 300px;
+    height: 430px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 12px black;
+    transform: preserve-3d;
+    perspective: 2000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cover {
+    z-index:0;
+    cursor: grab;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-origin: 0;
+    box-shadow: 1px 1px 12px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.5s;
+}
+.book:hover .cover{
+    transition: all 0.5s;
+    transform: rotateY(-85deg);
+}
+.content h2{
+    font-size: 32px;
+    font-style: italic;
+}
+.content p{
+    font-size:22px;
+    font-style: italic;
+    margin-left:15px;
+    margin-right: 15px;
+}
+.cover h2{
+    margin-top: 380px;
+    font-style: italic;
+}
+#title_contact{
+    font-size:40px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.container p {
+    font-size: 42px;
+    margin-left: 200px;
+}
+#message{
+    width: 750px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 32px;
+    transform: translateX(-30px);
+}
+input{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 32px;
+}
+#submit{
+    font-size:28px;
+    width:150px;
+    height: 50px;
+    padding: 10px;
+    border:2px solid black;
+    background-color: whitesmoke;
+    border-radius:25px;
+    text-align: center;
+    margin-left:45%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+#submit:hover{
+    color:white;
+    background-color: black;
+    border-color: whitesmoke;
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+footer p, footer a{
+    font-size: 28px;
+    color:whitesmoke;
+    text-decoration: none;
+}
+footer a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+video{
+    margin-bottom: 100px;
+    margin-top: 40px;
+    width: 100%;   
+}
